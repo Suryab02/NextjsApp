@@ -1,7 +1,14 @@
+/* eslint-disable react/no-unescaped-entities */
 import React from "react";
 import styles from "./page.module.css";
 import Image from "next/image";
 import Button from "@/components/Button/Button";
+
+export const metadata = {
+  title: "Surya Contact",
+  description: "This is the Contact info",
+};
+
 function page() {
   return (
     <div className={styles.container}>
