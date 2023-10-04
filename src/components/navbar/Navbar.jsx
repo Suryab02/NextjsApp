@@ -2,6 +2,7 @@
 import styles from "./navbar.module.css";
 import Link from "next/link";
 import React from "react";
+import DarkModeToogle from "../DarkMode/DarkModeToogle";
 function Navbar() {
   return (
     <div className={styles.container}>
@@ -9,6 +10,7 @@ function Navbar() {
         Surya Blog
       </Link>
       <div className={styles.links}>
+        <DarkModeToogle />
         <Link href="/">Home</Link>
         <Link href="/portfolio">Portfolio</Link>
         <Link href="/blog">Blog</Link>
